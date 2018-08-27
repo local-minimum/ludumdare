@@ -30,7 +30,7 @@ export default class PageNavEvent extends Component {
 		NavButtons.push(<ContentNavButton path={path+FirstPath} icon="ticket" href={path+'/theme'}>Theme</ContentNavButton>);
 		NavButtons.push(<ContentNavButton path={path+FullPath} icon="stats" href={path+'/stats'}>Stats</ContentNavButton>);
 
-		if ( IsLoggedIn ) {
+		if ( IsLoggedIn && ThemeMode >= 6 ) {
 			/* light={FirstPath == '/my'} */
 			NavButtons.push(<ContentNavButton path={path+FullPath} icon="star-half" href={path+'/my/grades'}>My Grades</ContentNavButton>);
 		}
