@@ -32,7 +32,7 @@ export default class PageNavEvent extends Component {
 
 		if ( IsLoggedIn ) {
 			/* light={FirstPath == '/my'} */
-			NavButtons.push(<ContentNavButton path={path+FirstPath} icon="user" href={path+'/my'}>Me</ContentNavButton>);
+			NavButtons.push(<ContentNavButton path={path+FullPath} icon="star-half" href={path+'/my/grades'}>My Grades</ContentNavButton>);
 		}
 
 //		// "Me" User Button (if home or logged in)
